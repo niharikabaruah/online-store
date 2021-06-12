@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Contact Us Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    <header>
+        <h1>Tech Store</h1>
+          <nav>
+             <ul>
+               <li><a href="index.html">home</a></li>
+               <li><a href="Shop.html">shop</a></li>
+               <li><a href="Contact.html">contact us</a></li>
+              </ul>
+          </nav>
+          <input type="search" placeholder="search...">
+    </header>
+    <aside>
+    <h2>Shop By:</h2>
+    <section>
+    <h3>Category</h3>
+    <hr>
+    <ul>
+        <li>All items</li>
+        <li>Cameras</li>
+        <li>Laptops</li>
+        <li>Phones</li>
+        <li>Accessories</li>
+        <li>Other</li>
+    </ul>
+    </section>
+    <section>
+    <h3>Price(&#x20B9)</h3>
+    <hr>
+    <ul>
+        <li>10k -19k</li>
+        <li>20k-29k</li>
+        <li>30k-39k</li>
+        <li>40k-49k</li>
+        <li>50k +</li>
+    </ul>
+    </section>
+    </aside>
+    
+    <main>
+    <h2>Contact Us:</h2>
+    <form>
+        <div class="inline">
+          <label for="name">Name:</label><input type="text" placeholder="Enter your name" id="name" name="name">
+        </div>
+        <div  class="inline">
+          <label for="email">Email:</label><input type="text" placeholder="Enter your email" id="email" name="email">
+        </div>
+        <div  class="inline">
+          <label for="phone number">Phone no.:</label><input type="number" placeholder="Enter your phone number"  id="phone number" name="phone number">
+          </div>
+          <div  class="inline">
+           <label for="DOB">Date of Birth: </label><input type="date">
+          </div>
+
+          <div  class="inline">
+           <label for="message"> Message</label> : <textarea cols="30" rows="5" id="message"></textarea>
+        </div>
+        <!-- Can be separated in different section  in the Subject field by doing the below: -->
+        <!-- <div>
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <optgroup label="Product Details">
+                    <option value="returns">Returns</option>
+                    <option value="faulty_item">Faulty Item</option>
+                </optgroup>
+                <optgroup label="Delivery">
+                    <option value="delivery">Delivery info</option>
+                    <option value="order_tracking">Tracking my order</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="advice">Advice</option>
+                    <option value="other">Other</option>
+                </optgroup>
+            </select> 
+        </div> -->
+        <!-- Can be made searchable in the Subject field by doing the below: -->
+        <div  class="inline">
+            <label for="subject">Subject:</label>
+            <input type="text" list="subjects" id="subject" placeholder="Enter your subject">
+            <datalist id="subjects">
+                <option value="returns">
+                <option value="faulty_item">
+                <option value="delivery">
+                <option value="order_tracking">
+                <option value="advice">
+                <option value="other">
+            </datalist>
+        </div>
+        
+        <div>
+            <p>Subscribe for future offers by:</p>
+            <label for="newsletter">Newsletter</label>
+            <input type="checkbox" id="newletter" name="subscribe" value="newletter">
+
+            <label for="email">Email</label>
+            <input type="checkbox" id="email" name="subscribe" value="email">
+        </div>
+
+        <div>
+            <p>How would you like to respond?</p>
+            <label for="phoneResponse">Phone</label>
+            <input type="radio" id="phoneResponse" name="response" value="phone">
+            <label for="emailResponse">Email</label>
+            <input type="radio" id="emailResponse" name="response" value="email">
+        </div>
+        <div>
+            <!-- <input type="submit"> -->
+            <button type="submit">Send Response</button>
+            <input type="reset">
+            
+        </div>
+    </form>
+    <!-- <form>
+        <input type="password">
+        <input type="color">
+        <input type="range" min="1" max="10" value="1">
+    </form> -->
+   
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/rmzqIbxLlDw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+
+    <iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaNZw9VBbyMUTN7r0FQYFCYehaTLUa9hw&q=Eiffel+Tower,Paris+France" allowfullscreen>
+</iframe>
+    </main>
+    <footer>
+        <nav>
+         <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="Shop.html">shop</a></li>
+            <li><a href="Contact.html">contact us</a></li>
+         </ul>
+        </nav>
+    </footer>
+
+ </body>
+</html>
